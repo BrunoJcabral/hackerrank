@@ -14,9 +14,10 @@ public class MiniMaxSum {
 
     public static void miniMaxSum(List<Integer> arr) {
         List<Integer> ordenado = arr.stream().sorted().collect(toList());
-        Long max = ordenado.subList(1,ordenado.size()).stream().mapToLong(Integer::longValue).sum();
-        Long min = ordenado.subList(0,ordenado.size()-1).stream().mapToLong(Integer::longValue).sum();
+        long max = ordenado.subList(1,ordenado.size()).stream().mapToLong(Integer::longValue).sum();
+        long min = ordenado.subList(0,ordenado.size()-1).stream().mapToLong(Integer::longValue).sum();
         System.out.println(min + " " + max);
+        //Concluido com sucesso
     }
 
 }
