@@ -13,11 +13,11 @@ import static java.util.stream.Collectors.toList;
 public class MiniMaxSum {
 
     public static void miniMaxSum(List<Integer> arr) {
-        List<Integer> ordenado = arr.stream().sorted().collect(toList());
-        long max = ordenado.subList(1,ordenado.size()).stream().mapToLong(Integer::longValue).sum();
-        long min = ordenado.subList(0,ordenado.size()-1).stream().mapToLong(Integer::longValue).sum();
+        List<Long> ordenado = arr.stream().map(Integer::longValue).sorted().collect(toList());
+        long max = ordenado.subList(1,ordenado.size()).stream().reduce(0L, Long::sum);
+        long min = ordenado.subList(0,ordenado.size()-1).stream().reduce(0L, Long::sum);
+
         System.out.println(min + " " + max);
-        //Concluido com sucesso
     }
 
 }
