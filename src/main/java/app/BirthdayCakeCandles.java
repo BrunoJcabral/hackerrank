@@ -21,7 +21,7 @@ public class BirthdayCakeCandles {
 }
 
 class BirthdayCakeCandlesSolution {
-    public static void main(String[] args){
+    public static void main(String... args){
 
         List<Integer> candles = Arrays.asList(82,49,82,82,41,82,15,63,38,25);
 
