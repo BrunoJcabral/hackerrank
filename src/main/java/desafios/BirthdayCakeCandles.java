@@ -1,11 +1,8 @@
-package app;
+package desafios;
 
-import java.io.*;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 
 public class BirthdayCakeCandles {
@@ -21,7 +18,7 @@ public class BirthdayCakeCandles {
 }
 
 class BirthdayCakeCandlesSolution {
-    public static void main(String[] args){
+    public static void main(String... args){
 
         List<Integer> candles = Arrays.asList(82,49,82,82,41,82,15,63,38,25);
 
