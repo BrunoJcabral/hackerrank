@@ -1,7 +1,6 @@
 
 *.class
 target/maven-archiver/pom.properties
-*.class
 classpath
 .project
 .settings/
