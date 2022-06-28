@@ -13,4 +13,11 @@ public class Cinema {
     private String nome;
     private String genero;
     private String autor;
+
+    @Override
+    public String toString() {
+        return "nome='" + nome + '\'' +
+                ", genero='" + genero + '\'' +
+                ", autor='" + autor + '\'';
+    }
 }
