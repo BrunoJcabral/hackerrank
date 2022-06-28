@@ -3,6 +3,7 @@ package desafios;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -17,6 +18,7 @@ public class MiniMaxSum {
         long min = ordenado.subList(0,ordenado.size()-1).stream().reduce(0L, Long::sum);
 
         System.out.println(min + " " + max);
+
     }
 
 }
