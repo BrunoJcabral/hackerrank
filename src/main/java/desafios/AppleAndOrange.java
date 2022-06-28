@@ -24,20 +24,21 @@ oranges: integer array, distances at which each orange falls from the tree.
  */
 public class AppleAndOrange {
     public static void countApplesAndOranges(int s, int t, int a, int b, List<Integer> apples, List<Integer> oranges) {
-       /*List<Integer> applesPosition = apples.stream().map(x-> x=a+x).collect(toList());
+       /*
+       List<Integer> applesPosition = apples.stream().map(x-> x=a+x).collect(toList());
         List<Integer> orangesPosition = oranges.stream().map(x-> x=b+x).collect(toList());
         long countApple = apples.stream().filter(x-> (a+x)>=s && (a+x)<=t).count();
         long countOrange = oranges.stream().filter(x-> (b+x)>=s && (b+x)<=t).count();
         System.out.println(countApple);
         System.out.println(countOrange);*/
 
-        System.out.println(apples.stream().filter(x-> (a+x)>=s && (a+x)<=t).count());
-        System.out.println(oranges.stream().filter(x-> (b+x)>=s && (b+x)<=t).count());
+        System.out.println(apples.stream().filter(x -> (a + x) >= s && (a + x) <= t).count());
+        System.out.println(oranges.stream().filter(x -> (b + x) >= s && (b + x) <= t).count());
 
     }
 }
 
- class AppleAndOrangeSolution {
+class AppleAndOrangeSolution {
     public static void main(String[] args) {
 
         int s = 7;
@@ -56,9 +57,9 @@ public class AppleAndOrange {
 
         int n = Integer.parseInt(thirdMultipleInput[1]);
 
-        List<Integer> apples = Arrays.asList(-2,2,1);
+        List<Integer> apples = Arrays.asList(-2, 2, 1);
 
-        List<Integer> oranges = Arrays.asList(5,-6);
+        List<Integer> oranges = Arrays.asList(5, -6);
 
         AppleAndOrange.countApplesAndOranges(s, t, a, b, apples, oranges);
 
