@@ -34,7 +34,7 @@ public class DinamicArray {
 
         String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
 
-        int n = Integer.parseInt(firstMultipleInput[0]);
+        int n = Integer.parseInt(firstMultipleInput[0]) ;
 
         int q = Integer.parseInt(firstMultipleInput[1]);
 
@@ -54,14 +54,5 @@ public class DinamicArray {
 
         List<Integer> result = Result.dynamicArray(n, queries);
 
-        bufferedWriter.write(
-                result.stream()
-                        .map(Object::toString)
-                        .collect(joining("\n"))
-                        + "\n"
-        );
-
-        bufferedReader.close();
-        bufferedWriter.close();
     }
 }
